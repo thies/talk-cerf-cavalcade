@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Thies Lindenthal: Dynamic Preferences</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/white.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+		<link rel="stylesheet" href="tweaks.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section data-background-image="imgs/clare_small.jpg">
+						<h2 class="lineheight1_4 notransform"><span class="darkonlight" style='line-hight: 100px;'>Dynamic Preferences for Architecture:<br>Finding Ground Truth with ML Approaches&nbsp;</span></h2>
+
+						<h2><span class="subtitle darkonlight">&nbsp;Dr. Thies Lindenthal&nbsp;</span></h2>
+						<p><span class="subtitle darkonlight">&nbsp;Department of Land Economy / University of Cambridge&nbsp;</span><br>
+						<span class="subtitle darkonlight">&nbsp;E-mail: htl24@cam.ac.uk / Twitter: @ThiesLindenthal&nbsp;</span></p>
+							<p>&nbsp;</p>
+							<p>&nbsp;</p>
+			</section>
+
+
+			<section data-markdown data-background-image="imgs/epl_wide.jpg">
+				<textarea data-template>
+					<h2 class="lineheight1_2 notransform">Training AI <br>to &ldquo;understand&rdquo;<br>architecture.</h2>
+					Note:
+				</textarea>
+			</section>
+
+
+				<section data-markdown >
+					<textarea data-template>
+						## Walking down a street...<span class="subtitle"><br/>So much to learn from looking at buildings, spaces, people...</span>
+						<iframe data-src="https://www.google.com/maps/embed?pb=!4v1615400218848!6m8!1m7!1sfrGO3071bDjlMFWKCuPROg!2m2!1d52.20218228800385!2d0.116240823654906!3f214.30357533449632!4f12.499881249341925!5f0.7820865974627469" data-preload width="900" height="500"></iframe>
+						Note:
+
+						* Wie lassen sich ästhetische Faktoren computergestützt erfassen?
+						* Wie beeinflussen ästhetische Faktoren den Wert einer Immobilie?
+						* Google Street View als  Sensor bei der automatisierten Wertermittlung.
+						* One size fits all? Wie individuell sind ästhetische Präferenzen bei Immobilien? Wie beeinflusst heterogene Nachfrage Preise und Liquidität?
+
+					</textarea>
+				</section>
+
+
+				<section class="white" data-background-color="#ffffff">
+					<h2>The Toolbox<span class="subtitle"><br />Computer vision + ML classification + trad. econometrics<br /></span></h2>
+					<img src="imgs/research_feature_vectors.png">
+				</section>
+
+			<section data-markdown data-background-image="imgs/map_romsey.jpeg" >
+				<textarea data-template>
+					## <span class="darkonlight">Automatic classification</span><br><span class="subtitle darkonlight">Detect architectural style (and age) from Google Street View</span>
+
+					<p class="centred"><img src="imgs/romsey_road.jpg" height=450></p>
+				</textarea>
+			</section>
+
+
+
+				<section data-markdown data-background-image="imgs/vinery_road.jpg" >
+					<textarea data-template>
+
+						## <span class="darkonlight">Higher prices...</span> <span class="subtitle darkonlight"><br>...for historic styles? No.</span>
+						* <span class="darkonlight">Proof-of-concept: <a href="https://link.springer.com/article/10.1007/s11146-021-09845-1">Lindenthal & Johnson (2021)</a></span>
+
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+
+					</textarea>
+				</section>
+
+
+				<section data-markdown >
+					<textarea data-template>
+						## Trust the machine?<span class="subtitle"><br/>What's happening inside the ML blackbox?</span>
+
+						<p class="centred"><img src="imgs/house_cars.jpg" height=400><br><span class="source">Working paper: </span><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4031891" class="source">Lindenthal &amp; Wan (2022)</a>
+					</textarea>
+				</section>
+
+
+				<section data-markdown data-background-video="imgs/PXL_20210310_232954432.mp4" data-background-video-loop data-background-video-muted>
+					<textarea data-template>
+						## <span class="transparent70">One taste for all?</span><span class=" transparent70 subtitle"><br/>How diverse are aesthetic preferences?</span>
+
+						* <span class="transparent70">Take the survey: https://4walls.cremll.com</span>
+
+					</textarea>
+				</section>
+
+
+				<section data-markdown>
+					<textarea data-template>
+						## Such a variety!<span class="subtitle"><br/>We had expected a bimodal distribution<br>&mdash;not so many nuances...</span>
+						<img src="imgs/hist_likes_training_data_many_responses.png" height="400">
+					</textarea>
+				</section>
+
+
+
+				<section data-markdown>
+					<textarea data-template>
+						## Some general trends...<span class="subtitle"><br/>People like greenery, space, good quality&mdash;and often historic buildings.</span>
+						<img src="imgs/example_like.png" height="500">
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## Better not...<span class="subtitle"><br/>Neglected, cheap materials, mixed styles.</span>
+						<img src="imgs/example_dislike.png" height="500">
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## The Marmite homes<span class="subtitle"><br/>The really interesting cases... Taste, largely, is personal.</span>
+						<img src="imgs/example_mixed.png" height="500">
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						## Still, we can predict taste<span class="subtitle"><br/>Personalised classifiers effectively learn from our swipes.</span>
+
+						<img src="imgs/precision.png">
+
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						## Searching ground truth<span class="subtitle"><br/>Participants are not consistent in their rankings.</span>
+						* Rankings become more critical in time.<br>
+						<img src="imgs/share_likes_in_time.png">
+					</textarea>
+				</section>
+
+
+				<section data-markdown>
+					<textarea data-template>
+						## Negative trend<span class="subtitle"><br/>Significant decline in likes</span>
+						<img src="imgs/consistency_table_2.png" height=500>
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						## ML classifiers...<span class="subtitle"><br/>Can explain 2/3 of all likes well...</span>
+						<img src="imgs/consistency_table_3.png" height=500>
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						## ML classifications...<span class="subtitle"><br/> Humans are more predictable later. </span>
+						<img src="imgs/consistency_table_4.png" height=500>
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						## Swayed by trees.<span class="subtitle"><br/>But only in beginning. Density effect consistent.</span>
+						<img src="imgs/consistency_table_5.png" height=500>
+					</textarea>
+				</section>
+			</section>
+
+			<section data-markdown data-background-image="imgs/door.jpg">
+				<textarea data-template>
+					## First Findings<span class="subtitle"><br/>The real black box: is it between our ears?</span>
+					* Personalised classifiers are in reach
+						- They can be trained with limited <br>effort (20 min?)
+					* Predictions are not perfect &mdash; but they<br>are consistent.
+					* ML helps to understand how we look<br>at the built environment.
+
+
+				</textarea>
+			</section>
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/math/math.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				transition: 'none',
+				width: 1244,
+				height: 700,
+				margin: 0.1,
+				math: {
+					mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+					config: 'TeX-AMS_HTML-full',
+					// pass other options into `MathJax.Hub.Config()`
+					TeX: { Macros: { RR: "{\\bf R}" } }
+				},
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ]
+			});
+		</script>
+	</body>
+</html>
